@@ -39,9 +39,7 @@ app.use(errorController.get404);
 // });
 
 mongoose
-  .connect(
-    "mongodb+srv://Jay:2pIFb1cyLWvESxJ0@cluster0.uajpbo9.mongodb.net/shop?retryWrites=true&w=majority"
-  )
+  .connect()
   .then((result) => {
     app.listen(3000);
   })
